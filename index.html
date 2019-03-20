@@ -2,48 +2,62 @@
 <html>
 
 <head>
+  <title>強資螺絲工廠</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/chiangtzu.css">
 </head>
 
+<style>
+  .mySlides {display:none;}
+</style>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
+  <div class="container">
+    <a href="index.html">
+      <img src="images/chiangtzu02.png" alt="">
+    </a>
+  </div>
+  
+  <!-- 導覽列  -->
+  <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+    <div class="container"> 
+      <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
         <p class="navbar-brand mb-0 text-white">
-          <i class="fa d-inline fa-lg fa-stop-circle"></i> BRAND </p>
+          <i class="fa fa-lg fa-bars"></i>
+        </p>
       </button>
       <div class="collapse navbar-collapse" id="navbar14">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"> <a class="nav-link" href="#" contenteditable="true">首頁</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">關於我們</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">產品介紹</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#" contenteditable="true">聯絡我們</a> </li>
+          <li class="nav-item"> <a class="nav-link text-dark" href="index.html">首頁</a> </li>
+          <li class="nav-item"> <a class="nav-link text-dark" href="#">關於我們</a> </li>
+          <li class="nav-item"> <a class="nav-link text-dark" href="#">產品介紹</a> </li>
+          <li class="nav-item"> <a class="nav-link text-dark" href="#">聯絡我們</a> </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-1"> <a class="nav-link" href="#">
-              <i class="fa  fa-fw fa-envelope"></i>
-            </a> </li>
-          <li class="nav-item mx-1"> <a class="nav-link" href="#">
-              <i class="fa  fa-fw fa-map-marker"></i>
-            </a> </li>
-          <li class="nav-item mx-1"> <a class="nav-link" href="#">
-            </a> </li>
-        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 fas fa-search" type="submit"></button>
+          </form>
       </div>
     </div>
   </nav>
-  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(&quot;images/schrauben-w1920.jpg&quot;);	background-position: center center, center center;	background-size: cover, cover;	background-repeat: repeat, repeat;">
-    <div class="container py-5">
-      <div class="row">
-        <div class="mx-auto col-lg-8 col-md-10">
-          <h1 class="mb-4 text-center display-4">誠信、效益、品質</h1>
-          <h3 class="text-center text-capitalize">faith、effectiveness、 quality</h3>
-        </div>
-      </div>
+
+  <!-- 輪播  -->
+  <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/prod16.jpg" style="width:100%">
+      <img class="mySlides" src="images/prod31.jpg" style="width:100%">
+      <img class="mySlides" src="images/prod16.jpg" style="width:100%">
+      <img class="mySlides" src="images/prod16.jpg" style="width:100%">
+    
+      <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-  </div>
+
+  <!-- 內容 -->  
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -55,7 +69,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card text-center"> <img class="card-img-top" src="images/20180613094148094809.jpg" alt="Card image cap">
+          <div class="card text-center"> <img class="card-img-top" src="images/macro-shot-screw-wooden-background_53876-32213.jpg" alt="Card image cap">
             <div class="card-body">
               <h5>營業項目</h5>
             </div>
@@ -64,23 +78,22 @@
       </div>
     </div>
   </div>
+
+  <!-- 版權頁 --> 
   <div class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="p-4 col-md-4">
-          <p class="lead">強資螺絲工廠</p>
-          <p class="">台中市南區福田三街306號</p>
+        <div class="p-4 col-md-6">
+          <h1>強資螺絲工廠</h1>
+          <h5>台中市南區福田三街306號</h5>
         </div>
-        <div class="p-4 col-md-4">
-          <ul class="list-unstyled"> <a href="#" class="text-dark">Home</a> <br> <a href="#" class="text-dark">About us</a> <br> <a href="#" class="text-dark">product</a> <br> </ul>
-        </div>
-        <div class="p-4 col-md-4">
+        <div class="p-4 col-md-6">
           <p class="lead"> <a href="#" class="text-dark">
-              <i class="fa d-inline mr-3 text-muted fa-phone"></i>0</a>4-2262-0596</p>
-          <p class="lead" contenteditable="true"> <a href="#" class="text-dark">
-              <i class="fa d-inline mr-3 text-muted fa-phone"></i>0</a>4-2262-5133</p>
+              <i class="d-inline mr-3 text-muted fas fa-phone"></i>0</a>4-2262-0596</p>
+          <p class="lead"> <a href="#" class="text-dark">
+              <i class="d-inline mr-3 text-muted fas fa-fax"></i>0</a>4-2262-5133</p>
           <p class="lead"> <a href="mailto:chiangtzu@gmail.com" class="text-dark">
-              <i class="fa d-inline mr-3 text-muted fa-envelope-o"></i>chiangtzu@gmail.com</a> </p>
+              <i class="d-inline mr-3 text-muted fas fa-envelope"></i>chiangtzu@gmail.com</a> </p>
         </div>
       </div>
       <div class="row">
@@ -93,6 +106,27 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
+  
+  <!-- 控制輪播 -->
+  <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  </script>
 </body>
 
 </html>
