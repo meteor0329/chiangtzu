@@ -11,3 +11,13 @@ body {
 .mr-2 {
 	margin-left: 20px
 }
+
+a:link{
+	text-decoration:none;
+	color:#686868;
+	}
+
+a:hover {
+	text-decoration:none;
+	color:#33AA24;
+	}
