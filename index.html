@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-tw">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalabe=0" />
+  <meta name="author" content="chiangtzu">
+  <meta name="keywords" content="白鐵,鋁,銅螺絲,螺帽,拉釘,小五金包,各種特殊螺絲製造">  
   <title>強資螺絲工廠</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/chiangtzu.css">
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="bookmark" href="images/favicon.ico"/>
@@ -28,15 +29,22 @@
   
   <!-- 導覽列  -->
   <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
-    <div class="container"> 
+    <div class="container">
+        
+      <!-- s --> 
       <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
-        <p class="mb-0 text-white">
-          <i class="fa fa-lg fa-bars"></i>
-              <a href="product.html">產品介紹</a>
-              <a href="contact.html">聯絡我們</a>  
-        </p>        
+        <p class="mb-0 text-white text-center">
+          <i class="fa fa-lg fa-bars"></i> 
+        </p>      
       </button>
-                   
+      <p class="navbar-toggler" style="margin:auto">
+        <a class="h6" href="product.html">產品介紹</a> 
+      </p>
+      <p class="navbar-toggler" style="margin:auto">
+        <a class="h6" href="contact.html">聯絡我們</a>  
+      </p> 
+
+      <!-- b -->             
       <div class="collapse navbar-collapse" id="navbar14">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"> <a class="nav-link text-dark" href="index.html">首頁</a> </li>
@@ -53,15 +61,36 @@
   </nav>
 
   <!-- 輪播  -->
-  <div class="w3-display-container">
-      <img class="mySlides" src="images/product01.jpg" style="width:100%">
-      <img class="mySlides" src="images/prod31.jpg" style="width:100%">
-      <img class="mySlides" src="images/prod41.jpg" style="width:100%">
-      <img class="mySlides" src="images/prod51.jpg" style="width:100%">
-    
-      <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="images/product01.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+        <img src="images/prod31.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+        <img src="images/prod41.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+        <img src="images/prod51.jpg" class="d-block w-100">
+        </div>        
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    </div>    
 
   <!-- 內容 -->  
   <div class="py-5">
@@ -69,15 +98,15 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card text-center"> <img class="card-img-top" src="images/fc1f4134970a304ed4a42f01dac8a786c8175c43.jpg" alt="Card image cap">
-            <div class="card-body" style="">
-              <h5>關於我們</h5>
+            <div class="card-body">
+              <h5><a href="about.html">關於我們</a></h5>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card text-center"> <img class="card-img-top" src="images/macro-shot-screw-wooden-background_53876-32213.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5>營業項目</h5>
+              <h5><a href="about.html">產品介紹</a></h5>
             </div>
           </div>
         </div>
@@ -90,51 +119,34 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 mrpl text-muted">
-            <p class="h1">強資螺絲工廠</p>
-            <p class="h6">© Copyright 2019 CHIANGTZU-All rights reserved.<br>
+            <p class="h2">強資螺絲工廠</p>
+            <p>© Copyright 2019 CHIANGTZU-All rights reserved.<br>
               台中市南區福田三街306號
             </p>
         </div>
         <div class="col-sm-3" style="margin:auto">
-            <h5><i class="d-inline mr-2 text-muted fas fa-phone"></i>04-2262-0596</h5>
+            <h6 class="text-secondary">
+                <i class="p-2 fas fa-lg fa-phone"></i>04-2262-0596
+            </h6>
         </div>
         <div class="col-sm-3" style="margin:auto">
-            <h5><i class="d-inline mr-2 text-muted fas fa-fax"></i>04-2262-5133</h5>
+            <h6 class="text-secondary">
+                <i class="p-2 fas fa-lg fa-fax"></i>04-2262-5133
+            </h6>
         </div>
-        <div class="col-sm-3" style="margin:auto">
-            <h5>
-              <i class="d-inline mr-2 text-muted fas fa-envelope"></i>
-              <a href="mailto:chiangtzu@gmail.com">chiangtzu@gmail.com</a>
-            </h5>
+        <div class="col-sm-3" style="margin:auto"> 
+            <h6 class="text-secondary">
+                <i class="p-2 fa-lg fas fa-envelope"></i>
+                <a href="mailto:chiangtzu@gmail.com">chiangtzu@gmail.com</a>
+            </h6>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <!-- 控制輪播 -->
-  <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-  </script>
 </body>
 
 </html>
