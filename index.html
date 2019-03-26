@@ -29,14 +29,14 @@
         
       <!-- s --> 
       <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
-        <p class="mb-0 text-white text-center">
-          <i class="fa fa-2x fa-bars"></i> 
-        </p>      
-      </button>
-      <form class="form-inline my-2 my-lg-0 navbar-toggler">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:180px; margin-right:10px ">
-        <button class="btn btn-outline-success my-2 my-sm-0 fas fa-search" type="submit"></button>
-      </form> 
+          <p class="mb-0 text-white text-center">
+            <i class="fa fa-bars"></i> 
+          </p>      
+        </button>
+        <form class="form-inline navbar-toggler">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:180px; height:30px; margin-right:10px">
+          <button class="btn btn-outline-success fas fa-search" type="submit"></button>
+        </form> 
 
       <!-- b -->             
       <div class="collapse navbar-collapse" id="navbar14">
@@ -110,7 +110,7 @@
 
   <!-- item -->
   <div class="container" style="margin-bottom:60px">
-      <div class="row auto" style="margin:0px -25px 0px -25px">
+      <div class="row">
         <div id="iconimg1" class="col">
           <a class="text-center font-weight-bold h5" href="screw.html">螺絲&nbsp;Screw</a>
         </div>
@@ -127,45 +127,69 @@
             <a class="text-center font-weight-bold h5" href="other.html">其他&nbsp;Other</a>
         </div>
         <div id="iconimg6" class="col">
-            <a class="text-center font-weight-bold h5" href="customize.html">訂製&nbsp;customize</a>
+            <a class="text-center font-weight-bold h5" href="customize.html">訂製&nbsp;Customize</a>
         </div>                                            
       </div>
     </div>
-    
-   
+
   <!-- footer --> 
-  <div class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 mrpl text-muted">
-            <p class="h2">強資螺絲工廠</p>
-            <p>© Copyright 2019 CHIANGTZU-All rights reserved.<br>
-              台中市南區福田三街306號
-            </p>
-        </div>
-        <div class="col-sm-3" style="margin:auto">
-            <h6 class="text-secondary">
-                <i class="p-2 fas fa-lg fa-phone"></i>04-2262-0596
-            </h6>
-        </div>
-        <div class="col-sm-3" style="margin:auto">
-            <h6 class="text-secondary">
-                <i class="p-2 fas fa-lg fa-fax"></i>04-2262-5133
-            </h6>
-        </div>
-        <div class="col-sm-3" style="margin:auto"> 
-            <h6 class="text-secondary">
-                <i class="p-2 fa-lg fas fa-envelope"></i>
-                <a href="mailto:chiangtzu@gmail.com">chiangtzu@gmail.com</a>
-            </h6>
+  <div class="bg-warning">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 mrpl text-dark">
+              <p class="h3">強資螺絲工廠</p>
+              <p style="font-size:14px">© Copyright 2019 CHIANGTZU,All rights reserved.<br>
+                台中市南區福田三街306號
+              </p>
+          </div>
+          <div class="col-sm-2" style="margin:auto">
+              <h6 class="text-dark">
+                  <i class="p-2 fas fa-lg fa-phone"></i>04-2262-0596
+              </h6>
+          </div>
+          <div class="col-sm-2" style="margin:auto">
+              <h6 class="text-dark">
+                  <i class="p-2 fas fa-lg fa-fax"></i>04-2262-5133
+              </h6>
+          </div>
+          <div class="col-sm-3" style="margin:auto"> 
+              <h6 class="text-dark">
+                  <i class="p-2 fa-lg fas fa-envelope"></i>
+                  <a href="mailto:chiangtzu@gmail.com">chiangtzu@gmail.com</a>
+              </h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
+	<!-- TOP btn -->
+	<button class="btn btn-warning text-white position-fixed" style="bottom:50px; right:25px; display:none" id="topbtn">
+		<i class="fas fa-lg fa-angle-double-up"></i>
+	</button>	
+
+	<!-- 啟動TOP btn -->
+	<script>
+		$(window).scroll(function(){
+			console.log("垂直捲動距離" + $(this).scrollTop() )
+
+			if( $(this).scrollTop() > 56){
+				$("nav").addClass("fixed-top");
+				$("#topbtn").fadeIn();
+			}
+			else{
+				$("nav").removeClass("fixed-top");
+				$("#topbtn").fadeOut();
+			}
+		})
+		
+		$("#topbtn").click(function(){
+			//$(window).scrollTop(0);
+			$("html").animate({scrollTop:0}, 500);
+		})
+	</script>	
 </body>
 
 </html>
