@@ -204,13 +204,32 @@ a:hover {
 	text-decoration:none;
 	padding:5px;	
 }
+
 .menu a{
 	color:gray;
 	font-size: 16px;	
 }
+
 .menu a:hover {
 	color:#21AB38;
 	font-size: 16px;	
+}
+
+.menutitle {
+	color:gray;
+	width:70%;
+	border-bottom:1px solid grey;
+	list-style-type:none;
+	text-decoration:none;
+	padding:5px;	
+}
+
+.menutitle a{
+	color:gray;	
+}
+
+.menutitle a:hover {
+	color:#21AB38;	
 }
 
 .machineimg {
