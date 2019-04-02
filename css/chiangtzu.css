@@ -9,6 +9,14 @@ html {
 	margin-top:20px;
 }
 
+.dropdown-menu li:hover .sub-menu {
+	visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .mr-2 {
 	margin-left: 20px
 }
